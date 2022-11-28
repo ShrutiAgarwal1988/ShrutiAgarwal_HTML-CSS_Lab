@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lab6 assignment</title>
+    <style>
+        header {
+            top: 0%;
+            padding: 2%;
+            position: fixed;
+            text-align: right;
+            font-weight: bold;
+            vertical-align: middle;
+            font-size: large;
+            z-index: 1;
+            padding-top: 10px;
+            background-color: red;
+            width: 97%;
+        }
+
+
+        nav {
+            top: 6%;
+            padding: 2px;
+            position: fixed;
+            vertical-align: middle;
+            background-color: grey;
+            z-index: 1;
+            width: 100%;
+        }
+
+        nav div {
+            display: inline;
+            text-decoration: none;
+            font-size: 10px;
+            margin: 0%;
+            color: white;
+            padding-top: 7px;
+            background-color: grey;
+
+        }
+
+        nav div:hover {
+            color: white;
+            background-color: black;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            color: #f9f9f9;
+            text-decoration: none;
+
+
+        }
+
+        .dropdown-content {
+
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Demo of Dropdown</header>
+    <nav>
+        <div class="dropdown">
+
+            <span>Link1</span>
+            
+        </div>
+        <div class="dropdown">
+            <span>Link2</span>
+            <div class="dropdown-content">
+
+                <ul>
+                    <li><a style="text-decoration: none" id="dropdown-content" href="#">DD_Link_1</a></li>
+
+                    <li><a style="text-decoration: none" id="dropdown-content" href="#">DD_Link_2</a></li>
+
+                    <li><a style="text-decoration: none" id="dropdown-content" href="#">DD_Link-3</a></li>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span>Link3</span>
+            <div class="dropdown-content">
+
+                <ul>
+                    <li><a style="text-decoration: none" id="dropdown-content" href="#">DD_Link_1</a></li>
+
+                    <li><a style="text-decoration: none" id="dropdown-content" href="#">DD_Link_2</a></li>
+
+                    <li><a style="text-decoration: none" id="dropdown-content" href="#">DD_Link-3</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
